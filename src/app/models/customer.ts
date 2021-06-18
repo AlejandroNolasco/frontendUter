@@ -1,3 +1,5 @@
+import { Rol } from "./rol";
+
 export class Customer {
     id: number;
     name: string;
@@ -6,14 +8,16 @@ export class Customer {
     password: string;
     phone: string;
     email: string;
+    rol: Rol;
 
     constructor(){
-        this.id= 0;
-        this.name= "";
-        this.username="";
+        this.id = 0;
+        this.name = "";
+        this.username ="";
         this.gender = "";
         this.password = "";
         this.phone = "";
         this.email = "";
+        this.rol = new Rol();
     }
 }

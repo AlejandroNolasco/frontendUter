@@ -22,7 +22,8 @@ export class ProfileComponent implements OnInit {
     phone: '',
     gender: '',
     id: 0,
-    password:''
+    password:'',
+    rol: {id : 0, name: ''}
   };
   constructor(private route: ActivatedRoute,
     private router: Router,

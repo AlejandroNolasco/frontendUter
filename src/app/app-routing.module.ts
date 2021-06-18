@@ -5,7 +5,7 @@ import { ListCustomerComponent } from './list-customer/list-customer.component';
 import { UpdateCustomerComponent } from './update-customer/update-customer.component';
 import { FindCustomerComponent } from './find-customer/find-customer.component';
 import { ProfileComponent } from './profile/profile.component';
-import {CreateSellerComponent} from './create-sellerr/create-seller.component';
+import { CreateSellerComponent} from './create-seller/create-seller.component';
 
 
 const routes: Routes = [

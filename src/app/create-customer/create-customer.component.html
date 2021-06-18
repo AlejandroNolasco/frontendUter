@@ -2,13 +2,13 @@
 <h2>Registro de Customer</h2>
 <br/>
 <div>
-    <form (ngSubmit)="insertCustomer()">
+    <form ngNativeValidate (ngSubmit)="insertCustomer()">
         <div>
             <input type="hidden" id="CustomerId" name="CustomerId"
             required [(ngModel)]="customer.id">
         </div>
         
-        <div class="mb-3">
+        <div class="form-group col-md-6">
             <label for="name">Name :</label>
             <input type="text" class="form-control" id="name"
             name= "name" placeholder="name"
@@ -18,7 +18,7 @@
         <div class="form-group col-md-6">
             <label for="password">Password :</label>
             <input type="text" class="form-control" id="password"
-            name= "password" placeholder="ame"
+            name= "password" placeholder="password"
             required [(ngModel)]="customer.password" />
         </div>
 
@@ -29,11 +29,19 @@
             required [(ngModel)]="customer.username" />
         </div>
 
-        <div class="form-group col-md-6">
+        <!--<div class="form-group col-md-6">
             <label for="gender">Gender :</label>
             <input type="text" class="form-control" id="gender"
             name="gender" placeholder="Gender"
             required [(ngModel)]="customer.gender" />
+        </div></!-->
+
+        <div class="form-group col-md-6">
+            <label for="gender">Gender :</label>
+            <select class="form-select" name="gender" [(ngModel)]="customer.gender" required>
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+            </select>
         </div>
 
         <div class="form-group col-md-6">
@@ -50,7 +58,25 @@
             required [(ngModel)]="customer.email" />
         </div>
 
-        <button type="submit" class ="btn btn-success">Save</button>
+        <!--<div class="form-group col-md-6">
+            <label for="rol">Rol :</label>
+            <input type="number" class="form-control" id="rol"
+            name="rol" placeholder="Rol"
+            required [(ngModel)]="customer.rol.id" />
+        </div></!-->
+
+        <div class="form-group col-md-6">
+            <label for="rol">Rol :</label>
+            <select class="form-select" name="rol" [(ngModel)]="customer.rol.id" required>
+                <option selected value="1">Principiante</option>
+                <option value="2">Veterano</option>
+                <option value="3">Avanzado</option>
+                <option value="4">Profesional</option>
+                <option value="5">God</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
 
     </form>
 </div>

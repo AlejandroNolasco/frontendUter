@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Customer } from '../models/customer'; 
 import { ActivatedRoute, Router } from '@angular/router';
 import { CustomerService } from '../services/customer.service';
+import { RolService } from '../services/rol.service';
 @Component({
   selector: 'app-create-customer',
   templateUrl: './create-customer.component.html',
@@ -14,6 +15,8 @@ export class CreateCustomerComponent implements OnInit {
   constructor( private route: ActivatedRoute,
     private router : Router,
     private customerService: CustomerService) { }
+    //private rolService: RolService) { }
+    
 
   ngOnInit(): void {
   }
@@ -24,5 +27,14 @@ export class CreateCustomerComponent implements OnInit {
       this.customer = new Customer();
       this.router.navigate(['listar']);
   }
+
+  /*listRol() {
+    this.rolService.getRolList().subscribe(
+      data => {
+        console.log('Rol' + JSON.stringify(data));
+        this.rolList = data;
+      }
+    )
+  }*/
 
 }
