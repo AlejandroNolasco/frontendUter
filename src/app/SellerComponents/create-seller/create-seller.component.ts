@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Seller} from '../models/seller'
+import {Seller} from '../../models/seller'
 import { ActivatedRoute, Router } from '@angular/router';
-import { SellerService } from '../services/seller.service';
+import { SellerService } from '../../services/seller.service';
 
 @Component({
   selector: 'app-create-seller',

@@ -1,0 +1,24 @@
+<br/>
+<h2>Actualización del Review</h2>
+<br/>
+<div>
+    <form (ngSubmit)="updateReviews()">
+        <div *ngIf="review">
+            <div class="form-group col-md-6">
+                <label for="stars">Stars :</label>
+                <input type="text" class="form-control" id="Stars"
+                name= "Stars" placeholder="Stars"
+                required [(ngModel)]="review.stars" />
+            </div>
+    
+            <div class="form-group col-md-6">
+                <label for="description">Description :</label>
+                <input type="text" class="form-control" id="Description"
+                name= "Description" placeholder="Description"
+                required [(ngModel)]="review.description" />
+            </div>
+
+        </div>
+        <button type="submit" class ="btn btn-success">Save</button>
+    </form>
+</div>

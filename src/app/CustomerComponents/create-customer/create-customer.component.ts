@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Customer } from '../models/customer'; 
+import { Customer } from '../../models/customer'; 
 import { ActivatedRoute, Router } from '@angular/router';
-import { CustomerService } from '../services/customer.service';
-import { RolService } from '../services/rol.service';
+import { CustomerService } from '../../services/customer.service';
+import { RolService } from '../../services/rol.service';
 @Component({
   selector: 'app-create-customer',
   templateUrl: './create-customer.component.html',
