@@ -10,12 +10,12 @@ import { CreateSellerComponent} from './create-seller/create-seller.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'customer', pathMatch:'full'},
-  {path: 'listar', component: ListCustomerComponent},
-  {path: 'nuevo', component:CreateCustomerComponent},
-  {path: 'actualizar/:id', component: UpdateCustomerComponent},
-  {path: 'buscar', component: FindCustomerComponent},
+  {path: 'listcustomer', component: ListCustomerComponent},
+  {path: 'newcustomer', component:CreateCustomerComponent},
+  {path: 'updatecustomer/:id', component: UpdateCustomerComponent},
+  {path: 'searchcustomer', component: FindCustomerComponent},
   {path: 'profile', component: ProfileComponent},
-  {path: 'seller', component: CreateSellerComponent}
+  {path: 'newseller', component: CreateSellerComponent}
 ];
 
 @NgModule({

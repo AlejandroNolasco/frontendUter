@@ -2,7 +2,7 @@
 <h2>Listado de Customers</h2>
 <br/>
 <div>
-    <form class="row g-3" (ngSubmit)="searchCustomerByUsername()">
+    <form class="row g-3" ngNativeValidate (ngSubmit)="searchCustomerByUsername()">
         <div class="col-auto">
             <label class="form-control-plaintext" for="username">Username :</label>
         </div>
@@ -26,6 +26,7 @@
             <th scope="col">Password</th>
             <th scope="col">Phone</th>
             <th scope="col">Email</th>
+            <th scope="col">Rol</th>
         </tr>
     </thead>
     <tbody>
@@ -38,6 +39,7 @@
                 <td>{{customer.gender}}</td>
                 <td>{{customer.phone}}</td>
                 <td>{{customer.email}}</td>
+                <td>{{customer.rol.name}}</td>
                 <td>
                     <button type="submit" (click)='deleteCustomer(customer)' class="btn btn-danger">Delete</button>
                     <button type="submit" (click)='updateCustomer(customer)' class="btn btn-primary">Update</button>

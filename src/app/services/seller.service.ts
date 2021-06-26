@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class SellerService {
 
   
-  private baseURL= 'https://uterapp.herokuapp.com/api/sellers';
+  private baseURL= 'http://localhost:8080/api/sellers';
 
   constructor( private http: HttpClient) { }
 

@@ -6,6 +6,5 @@ export interface Product{
     email:string;
     phone: string; 
     gender: string;
-    rol:0;
     
 }

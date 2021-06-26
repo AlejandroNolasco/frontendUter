@@ -10,7 +10,6 @@ import { CustomerService } from '../services/customer.service';
 export class FindCustomerComponent implements OnInit {
 
   id: number = 0;
-  dni: string = '';
   customer: Customer = new Customer();
   name: string = '';
   lastName: string= '';

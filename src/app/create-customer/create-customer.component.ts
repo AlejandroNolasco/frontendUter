@@ -25,7 +25,7 @@ export class CreateCustomerComponent implements OnInit {
     this.customerService.insertCustomer(this.customer)
       .subscribe(datos=>console.log(datos), error=>console.log(error));
       this.customer = new Customer();
-      this.router.navigate(['listar']);
+      this.router.navigate(['listcustomer']);
   }
 
   /*listRol() {

@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CreateSellerComponent } from './create-seller/create-seller.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FindCustomerComponent,
     UpdateCustomerComponent,
     ProfileComponent,
+    CreateSellerComponent,
   
   ],
   imports: [

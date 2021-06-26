@@ -30,7 +30,7 @@ export class ListCustomerComponent implements OnInit {
   }
 
   updateCustomer(customer: Customer){
-    this.router.navigate(['actualizar', customer.id]);
+    this.router.navigate(['updatecustomer', customer.id]);
   }
   searchCustomerByUsername(){
     if(this.username.length!=0){
