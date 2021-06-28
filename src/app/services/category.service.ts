@@ -29,18 +29,8 @@ export class CategoryService {
   deleteCategory(id: number): Observable<any>{
     return this.http.delete(`${this.baseURL}/${id}`);
   }
-  getCateogoryById(id: number) : Observable<any>{
+  getCategoryById(id: number) : Observable<any>{
     return this.http.get(`${this.baseURL}/${id}`);
   }
-  getCategoryByUsername(username: string) : Observable<any>{
-    return this.http.get(`${this.baseURL}/searchByUsername/${username}`);
-  }
- 
-  getSellerByName(username: string): Observable<any>{
-    return this.http.get(`${this.baseURL}/searchByName/${name}`);
-  }
 
-//   getSellerByEmail(email: string): Observable<any> {
-//     return this.http.get(`${this.baseURL}/searchByEmail/${email}`);
-//   }
 }
