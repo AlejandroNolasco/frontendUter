@@ -25,6 +25,9 @@ export class ReviewsService{
     getReviewsById(id:number): Observable<any>{
         return this.http.get(`${this.baseURL}/${id}`);
     }
+    getReviewsByStars(stars: number): Observable<any>{
+        return this.http.get(`${this.baseURL}/searchByStars/${stars}`);
+      }
     deleteReviews(id: number): Observable<any>{
         return this.http.delete(`${this.baseURL}/${id}`);
     }

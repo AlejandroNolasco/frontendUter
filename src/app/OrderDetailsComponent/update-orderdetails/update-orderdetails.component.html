@@ -1,0 +1,29 @@
+<br/>
+<h2>Actualización de Customer</h2>
+<br/>
+<div>
+    <form (ngSubmit)="updateOrderDetails()">
+        <div *ngIf="orderdetail">
+            <div class="form-group col-md-6">
+                <label for="unitPrice">Unit Price :</label>
+                <input type="number" class="form-control" id="unitPrice"
+                name= "unitPrice" placeholder="Unit Price"
+                required [(ngModel)]="orderdetail.unitPrice" />
+            </div>
+    
+            <div class="form-group col-md-6">
+                <label for="quantity">Quantity :</label>
+                <input type="number" class="form-control" id="quantity"
+                name= "quantity" placeholder="Quantity"
+                required [(ngModel)]="orderdetail.quantity" />
+            </div>
+            <div class="form-group col-md-6">
+                <label for="discount">Discount :</label>
+                <input type="text" class="form-control" id="discount"
+                name= "discount" placeholder="Discount"
+                required [(ngModel)]="orderdetail.discount" />
+            </div>
+            </div>
+        <button type="submit" class ="btn btn-success">Save</button>
+    </form>
+</div>

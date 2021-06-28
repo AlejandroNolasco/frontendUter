@@ -10,7 +10,7 @@ export class Orders {
     constructor(){
         this.id = 0;
         this.seller = new Seller();
-        this.customer = new Customer;
+        this.customer = new Customer();
         //corregir por si esta mal
         this.orderDate = new Date();
     }
