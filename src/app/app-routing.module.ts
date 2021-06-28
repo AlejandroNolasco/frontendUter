@@ -12,14 +12,14 @@ import { UpdateReviewsComponent } from './ReviewsComponents/update-reviews/updat
 
 const routes: Routes = [
   {path: '', redirectTo:'customer', pathMatch:'full'},
-  {path: 'listcustomer', component: ListCustomerComponent},
-  {path: 'listreview', component: ListReviewsComponent},
-  {path: 'newcustomer', component:CreateCustomerComponent},
-  {path: 'updatecustomer/:id', component: UpdateCustomerComponent},
-  {path: 'updatereview/:id',component:UpdateReviewsComponent},
-  {path: 'searchcustomer', component: FindCustomerComponent},
+  {path: 'customers/list', component: ListCustomerComponent},
+  {path: 'reviews/list', component: ListReviewsComponent},
+  {path: 'customers/create', component:CreateCustomerComponent},
+  {path: 'customers/update/:id', component: UpdateCustomerComponent},
+  {path: 'reviews/update/:id',component:UpdateReviewsComponent},
+  {path: 'customers/search', component: FindCustomerComponent},
   {path: 'profile', component: ProfileComponent},
-  {path: 'newseller', component: CreateSellerComponent}
+  {path: 'sellers/create', component: CreateSellerComponent}
 ];
 
 @NgModule({
