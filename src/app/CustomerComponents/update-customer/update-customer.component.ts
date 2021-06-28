@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CustomerService } from '../services/customer.service';
+import { CustomerService } from '../../services/customer.service';
 import {ActivatedRoute, Router} from '@angular/router';
-import { Customer } from '../models/customer';
+import { Customer } from '../../models/customer';
 
 @Component({
   selector: 'app-update-customer',
