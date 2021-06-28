@@ -1,0 +1,33 @@
+<br/>
+<h2>Listado de Products</h2>
+<br/>
+
+<br/>
+<table class="table table-striped">
+    <thead class="thead_dark">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Seller</th>
+            <th scope="col">Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let product of products">
+            <tr>
+                <th scope="row">{{ product.id }}</th>
+                <td>{{product.name}}</td>
+                <td>{{product.description}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.seller.username}}</td>
+                <td>{{product.category.name}}</td>
+                <td>
+                    <button type="submit" (click)='deleteProducts(product)' class="btn btn-danger">Delete</button>
+                    <button type="submit" (click)='updateProducts(product)' class="btn btn-primary">Update</button>
+                </td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>

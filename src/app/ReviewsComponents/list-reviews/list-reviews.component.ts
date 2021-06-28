@@ -29,7 +29,7 @@ export class ListReviewsComponent implements OnInit {
   }
 
   updateReviews(review: Reviews){
-    this.router.navigate(['updatereview', review.id]);
+    this.router.navigate(['reviews/update', review.id]);
   }
   
 }

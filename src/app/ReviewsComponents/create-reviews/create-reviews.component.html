@@ -1,0 +1,40 @@
+<br/>
+<h2>Registro de Reviews</h2>
+<br/>
+<div>
+    <form ngNativeValidate (ngSubmit)="insertReviews()">
+        <div>
+            <input type="hidden" id="ReviewsId" name="ReviewsId"
+            required [(ngModel)]="review.id">
+        </div>
+        
+        <div class="form-group col-md-6">
+            <label for="description">Description :</label>
+            <input type="text" class="form-control" id="description"
+            name= "description" placeholder="description"
+            required [(ngModel)]="review.description" />
+        </div>
+ 
+        <div class="form-group col-md-6">
+            <label for="stars">Stars :</label>
+            <input type="number" class="form-control" id="stars"
+            name= "star"
+            placeholder="Stars" 
+            required [(ngModel)]="review.stars" />
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="id">Customer Id :</label>
+            <input type="number" class="form-control" id="id"
+            name= "id" placeholder="Id" [(ngModel)]="review.customer.id" required >
+        </div>
+        
+        <div class="form-group col-md-6">
+            <label for="id">Seller Id :</label>
+            <input type="number" class="form-control" id="id"
+            name= "id" placeholder="Id" [(ngModel)]="review.seller.id" required >
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>

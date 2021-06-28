@@ -14,17 +14,52 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CreateSellerComponent } from './SellerComponents/create-seller/create-seller.component';
 import { ListReviewsComponent } from './ReviewsComponents/list-reviews/list-reviews.component';
 import { UpdateReviewsComponent } from './ReviewsComponents/update-reviews/update-reviews.component';
+import { CreateReviewsComponent } from './ReviewsComponents/create-reviews/create-reviews.component';
+import { FindReviewsComponent } from './ReviewsComponents/find-reviews/find-reviews.component';
+import { CreateOrdersComponent } from './OrderComponent/create-orders/create-orders.component';
+import { FindOrdersComponent } from './OrderComponent/find-orders/find-orders.component';
+import { ListOrdersComponent } from './OrderComponent/list-orders/list-orders.component';
+import { UpdateOrdersComponent } from './OrderComponent/update-orders/update-orders.component';
+import {CreateOrderDetailsComponent} from './OrderDetailsComponent/create-orderdetails/create-orderdetails.component'
+import { FindOrderDetailsComponent } from './OrderDetailsComponent/find-orderdetails/find-orderdetails.component';
+import { ListOrderDetailsComponent } from './OrderDetailsComponent/list-orderdetails/list-orderdetails.component';
+import { UpdateOrderDetailsComponent } from './OrderDetailsComponent/update-orderdetails/update-orderdetails.component';
+import { CreateProductComponent } from './ProductComponents/create-product/create-product.component';
+import { FindProductComponent } from './ProductComponents/find-product/find-product.component';
+import { ListProductComponent } from './ProductComponents/list-product/list-product.component';
+import { UpdateProductsComponent } from './ProductComponents/update-product/update-product.component';
 @NgModule({
   declarations: [
     AppComponent,
     CreateCustomerComponent,
     ListCustomerComponent,
-    ListReviewsComponent,
     FindCustomerComponent,
     UpdateCustomerComponent,
-    ProfileComponent,
+
+    ListReviewsComponent,
+    UpdateReviewsComponent,
+    CreateReviewsComponent,
+    FindReviewsComponent,
+    
+    CreateOrdersComponent,
+    FindOrdersComponent,
+    ListOrdersComponent,
+    UpdateOrdersComponent,
+
+
+    CreateOrderDetailsComponent,
+    FindOrderDetailsComponent,
+    ListOrderDetailsComponent,
+    UpdateOrderDetailsComponent,
+
+
+    CreateProductComponent,
+    FindProductComponent,
+    ListProductComponent,
+    UpdateProductsComponent,
+
     CreateSellerComponent,
-    UpdateReviewsComponent
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,33 @@
+<br/>
+<h2>Listado de Order Details</h2>
+<br/>
+
+<br/>
+<table class="table table-striped">
+    <thead class="thead_dark">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Orders</th>
+            <th scope="col">Products</th>
+            <th scope="col">Unit Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Discount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let orderdetail of orderdetails">
+            <tr>
+                <th scope="row">{{ orderdetail.id }}</th>
+                <td>{{orderdetail.orders.orderDate}}</td>
+                <td>{{orderdetail.products.name}}</td>
+                <td>{{orderdetail.unitPrice}}</td>
+                <td>{{orderdetail.quantity}}</td>
+                <td>{{orderdetail.discount}}</td>
+                <td>
+                    <button type="submit" (click)='deleteOrderDetails(orderdetail)' class="btn btn-danger">Delete</button>
+                    <button type="submit" (click)='updateOrderDetails(orderdetail)' class="btn btn-primary">Update</button>
+                </td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>
