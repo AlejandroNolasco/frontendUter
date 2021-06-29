@@ -36,7 +36,7 @@ export class SellerService {
     return this.http.get(`${this.baseURL}/searchByUsername/${username}`);
   }
  
-  getSellerByName(username: string): Observable<any>{
+  getSellerByName(name: string): Observable<any>{
     return this.http.get(`${this.baseURL}/searchByName/${name}`);
   }
 
