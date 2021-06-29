@@ -18,7 +18,7 @@ export class FindOrdersComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  searchReviewsById(){
+  searchOrdersById(){
     this.orderService.getOrderById(this.id)
     .subscribe(orders =>this.orders=orders);
   }

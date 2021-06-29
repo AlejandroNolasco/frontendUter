@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class OrderDetailsService {
 
   
-  private baseURL= 'http://localhost:8080/api/ordersDetails';
+  private baseURL= 'http://localhost:8080/api/orderdetails';
 
   constructor( private http: HttpClient) { }
 
