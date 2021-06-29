@@ -23,35 +23,55 @@ import { CreateProductComponent } from './ProductComponents/create-product/creat
 import { FindProductComponent } from './ProductComponents/find-product/find-product.component';
 import { ListProductComponent } from './ProductComponents/list-product/list-product.component';
 import { UpdateProductsComponent } from './ProductComponents/update-product/update-product.component';
+import { CreateCategoryComponent } from './CategoryComponents/create-category/create-category.component';
+import { ListCategoryComponent } from './CategoryComponents/list-category/list-category.component';
+import { UpdateCategoryComponent } from './CategoryComponents/update-category/update-category.component';
+import { CreateRolComponent } from './RolesComponents/create-rol/create-rol.component';
+import { ListRolComponent } from './RolesComponents/list-rol/list-rol.component';
+import { UpdateRolComponent } from './RolesComponents/update-rol/update-rol.component';
+import { FindCategoryComponent } from './CategoryComponents/find-category/find-category.component';
+import { FindRolComponent } from './RolesComponents/find-rol/find-rol.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'customer', pathMatch:'full'},
+
+  {path: 'customers/create', component:CreateCustomerComponent},
   {path: 'customers/list', component: ListCustomerComponent},
   {path: 'customers/search', component: FindCustomerComponent},
-  {path: 'customers/create', component:CreateCustomerComponent},
   {path: 'customers/update/:id', component: UpdateCustomerComponent},
 
-  {path: 'reviews/list', component: ListReviewsComponent},
   {path: 'reviews/create',component: CreateReviewsComponent},
+  {path: 'reviews/list', component: ListReviewsComponent},
   {path: 'reviews/search',component: FindReviewsComponent},
   {path: 'reviews/update/:id',component:UpdateReviewsComponent},
 
   {path: 'orders/create',component:CreateOrdersComponent},
-  {path: 'orders/search',component:FindOrdersComponent},
   {path: 'orders/list', component: ListOrdersComponent},
+  {path: 'orders/search',component:FindOrdersComponent},
   {path: 'orders/update/:id', component: UpdateOrdersComponent},
 
   {path: 'orderdetails/create', component:CreateOrderDetailsComponent},
-  {path: 'orderdetails/search',component:FindOrderDetailsComponent},
   {path: 'orderdetails/list',component:ListOrderDetailsComponent},
+  {path: 'orderdetails/search',component:FindOrderDetailsComponent},
   {path: 'orderdetails/update/:id',component:UpdateOrderDetailsComponent},
 
   {path: 'products/create',component:CreateProductComponent},
-  {path: 'products/search',component:FindProductComponent},
   {path: 'products/list', component:ListProductComponent},
-  {path: 'products/list', component:UpdateProductsComponent},
+  {path: 'products/search',component:FindProductComponent},
+  {path: 'products/update/:id', component:UpdateProductsComponent},
+  
+  {path: 'categories/create', component:CreateCategoryComponent},
+  {path: 'categories/list', component:ListCategoryComponent},
+  {path: 'categories/search', component:FindCategoryComponent},
+  {path: 'categories/update/:id', component:UpdateCategoryComponent},
+
+  {path: 'roles/create', component:CreateRolComponent},
+  {path: 'roles/list', component:ListRolComponent},
+  {path: 'roles/search', component:FindRolComponent},
+  {path: 'roles/update/:id', component:UpdateRolComponent},
 
   {path: 'profile', component: ProfileComponent},
+  
   {path: 'sellers/create', component: CreateSellerComponent}
 ];
 

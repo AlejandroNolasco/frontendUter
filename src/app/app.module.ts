@@ -20,7 +20,7 @@ import { CreateOrdersComponent } from './OrderComponent/create-orders/create-ord
 import { FindOrdersComponent } from './OrderComponent/find-orders/find-orders.component';
 import { ListOrdersComponent } from './OrderComponent/list-orders/list-orders.component';
 import { UpdateOrdersComponent } from './OrderComponent/update-orders/update-orders.component';
-import {CreateOrderDetailsComponent} from './OrderDetailsComponent/create-orderdetails/create-orderdetails.component'
+import { CreateOrderDetailsComponent} from './OrderDetailsComponent/create-orderdetails/create-orderdetails.component'
 import { FindOrderDetailsComponent } from './OrderDetailsComponent/find-orderdetails/find-orderdetails.component';
 import { ListOrderDetailsComponent } from './OrderDetailsComponent/list-orderdetails/list-orderdetails.component';
 import { UpdateOrderDetailsComponent } from './OrderDetailsComponent/update-orderdetails/update-orderdetails.component';
@@ -28,6 +28,14 @@ import { CreateProductComponent } from './ProductComponents/create-product/creat
 import { FindProductComponent } from './ProductComponents/find-product/find-product.component';
 import { ListProductComponent } from './ProductComponents/list-product/list-product.component';
 import { UpdateProductsComponent } from './ProductComponents/update-product/update-product.component';
+import { CreateCategoryComponent } from './CategoryComponents/create-category/create-category.component';
+import { ListCategoryComponent } from './CategoryComponents/list-category/list-category.component';
+import { UpdateCategoryComponent } from './CategoryComponents/update-category/update-category.component';
+import { CreateRolComponent } from './RolesComponents/create-rol/create-rol.component';
+import { ListRolComponent } from './RolesComponents/list-rol/list-rol.component';
+import { UpdateRolComponent } from './RolesComponents/update-rol/update-rol.component';
+import { FindCategoryComponent } from './CategoryComponents/find-category/find-category.component';
+import { FindRolComponent } from './RolesComponents/find-rol/find-rol.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,17 +54,25 @@ import { UpdateProductsComponent } from './ProductComponents/update-product/upda
     ListOrdersComponent,
     UpdateOrdersComponent,
 
-
     CreateOrderDetailsComponent,
     FindOrderDetailsComponent,
     ListOrderDetailsComponent,
     UpdateOrderDetailsComponent,
 
-
     CreateProductComponent,
     FindProductComponent,
     ListProductComponent,
     UpdateProductsComponent,
+
+    CreateCategoryComponent,
+    ListCategoryComponent,
+    FindCategoryComponent,
+    UpdateCategoryComponent,
+    
+    CreateRolComponent,
+    ListRolComponent,
+    FindRolComponent,
+    UpdateRolComponent,
 
     CreateSellerComponent,
     ProfileComponent,

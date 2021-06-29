@@ -1,8 +1,8 @@
 <br/>
-<h2>Search Products</h2>
+<h2>Search Category</h2>
 <br/>
 <div>
-    <form class="row g-3" ngNativeValidate (ngSubmit)="searchProductByName()">
+    <form class="row g-3" ngNativeValidate (ngSubmit)="searchCategoryByName()">
         <div class="col-auto">
             <label class="form-control-plaintext" for="name">Name :</label>
         </div>
@@ -26,21 +26,17 @@
             <th scope="col">Id</th>
             <th scope="col">Name</th>
             <th scope="col">Description</th>
-            <th scope="col">Price</th>
-            <th scope="col">Seller</th>
-            <th scope="col">Category</th>
         </tr>
     </thead>
     <tbody>
-        <ng-container *ngFor="let product of products">
+        <ng-container *ngFor="let category of categories">
             <tr>
-                <th scope="row">{{ product.id }}</th>
-                <td>{{product.name}}</td>
-                <td>{{product.description}}</td>
-                <td>{{product.price}}</td>
-                <td>{{product.seller.id}}</td>
-                <td>{{product.category.id}}</td>
+                <th scope="row">{{ category.id }}</th>
+                <td>{{category.name}}</td>
+                <td>{{category.description}}</td>
             </tr>
         </ng-container>
     </tbody>
 </table>
+
+

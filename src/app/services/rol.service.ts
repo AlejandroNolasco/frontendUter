@@ -32,5 +32,9 @@ export class RolService {
   getRolById(id: number) : Observable<any>{
     return this.http.get(`${this.baseURL}/${id}`);
   }
+
+  getRolByName(name: string): Observable<any>{
+    return this.http.get(`${this.baseURL}/searchByName/${name}`);
+  }
   
 }
