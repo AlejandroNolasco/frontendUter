@@ -28,6 +28,9 @@ export class CreateCustomerComponent implements OnInit {
       this.router.navigate(['listcustomer']);
   }
 
+  goProfile(){
+    this.router.navigateByUrl('customer/profile')
+  }
   /*listRol() {
     this.rolService.getRolList().subscribe(
       data => {

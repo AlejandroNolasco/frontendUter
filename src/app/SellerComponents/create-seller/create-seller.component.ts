@@ -26,4 +26,8 @@ export class CreateSellerComponent implements OnInit {
       this.router.navigate(['listseller']);
   }
 
+  goSeller(){
+    this.router.navigateByUrl('seller/profile')
+  }
+
 }
