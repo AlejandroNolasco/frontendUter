@@ -1,0 +1,17 @@
+<br/>
+<h2>Actualización del Orders</h2>
+<br/>
+<div>
+    <form (ngSubmit)="updateOrders()">
+        <div *ngIf="order">
+            <div class="form-group col-md-6">
+                <label for="date">Date </label>
+                <input type="date" class="form-control" id="date"
+                name= "date" placeholder="Date"
+                required [(ngModel)]="order.orderDate"/>
+            </div> 
+
+        </div>
+        <button type="submit" class ="btn btn-success">Save</button>
+    </form>
+</div>

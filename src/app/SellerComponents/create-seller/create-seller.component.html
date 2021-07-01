@@ -1,0 +1,63 @@
+<br/>
+<h2>Registro de Seller</h2>
+<br/>
+<div>
+    <form ngNativeValidate (ngSubmit)="insertSeller()">
+        <div>
+            <input type="hidden" id="SellerId" name="SellerId"
+            >
+        </div>
+        
+        <div class="form-group col-md-6">
+            <label for="name">Name :</label>
+            <input type="text" class="form-control" id="name"
+            name= "name" placeholder="name"
+            required [(ngModel)]="seller.name"
+             />
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="password">Password :</label>
+            <input type="password" class="form-control" id="password"
+            name= "password" placeholder="password"
+            required [(ngModel)]="seller.password"
+             />
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="Username">Username :</label>
+            <input type="text" class="form-control" id="Username"
+            name="Username" placeholder="Username"
+            required [(ngModel)]="seller.username"
+            />
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="gender">Gender :</label>
+            <select class="form-select" name="gender" [(ngModel)]="seller.gender" required>
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+            </select>
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="phone">Phone :</label>
+            <input type="text" class="form-control" id="phone"
+            name="phone" placeholder="Phone"
+            required [(ngModel)]="seller.phone"
+            />
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="email">Email :</label>
+            <input type="text" class="form-control" id="email"
+            name="email" placeholder="Email"
+            required [(ngModel)]="seller.email"
+             />
+        </div>
+
+        <button type="submit" class ="btn btn-primary">Save</button>
+        <button class ="btn btn-primary" (click)="goSeller()" >Login</button>
+
+    </form>
+</div>

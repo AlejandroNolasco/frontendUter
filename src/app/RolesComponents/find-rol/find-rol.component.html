@@ -1,0 +1,40 @@
+<br/>
+<h2>Search Rol</h2>
+<br/>
+<div>
+    <form class="row g-3" ngNativeValidate (ngSubmit)="searchRolByName()">
+        <div class="col-auto">
+            <label class="form-control-plaintext" for="name">Name :</label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" id="name" 
+            name="name" required [(ngModel)]="name" placeholder="Search by name" />
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-success">Search</button>
+        </div>
+    </form>
+</div>
+<br/>
+<br/>
+
+<br/>
+
+<table class="table table-striped table-dark table-hover">
+    <thead class="thead_dark">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let rol of roles">
+            <tr>
+                <th scope="row">{{ rol.id }}</th>
+                <td>{{rol.name}}</td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>
+
+

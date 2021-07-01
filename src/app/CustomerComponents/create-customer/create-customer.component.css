@@ -1,0 +1,17 @@
+.contenedor
+{
+    background-color: black;
+
+    align-items: center;
+    inline-size: 900px;   
+    opacity: .7;
+    position: absolute;
+
+}
+
+.container
+{
+
+    align-items: center;
+    background-size: contain;
+} 

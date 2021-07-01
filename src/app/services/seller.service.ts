@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class SellerService {
 
   
-  private baseURL= 'https://uterapp.herokuapp.com/api/sellers';
+  private baseURL= 'http://localhost:8080/api/sellers';
 
   constructor( private http: HttpClient) { }
 
@@ -36,7 +36,7 @@ export class SellerService {
     return this.http.get(`${this.baseURL}/searchByUsername/${username}`);
   }
  
-  getSellerByName(username: string): Observable<any>{
+  getSellerByName(name: string): Observable<any>{
     return this.http.get(`${this.baseURL}/searchByName/${name}`);
   }
 
