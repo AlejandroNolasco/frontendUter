@@ -23,7 +23,7 @@ export class CreateSellerComponent implements OnInit {
     this.sellerService.insertSeller(this.seller)
       .subscribe(datos=>console.log(datos), error=>console.log(error));
       this.seller = new Seller();
-      this.router.navigate(['listseller']);
+      this.router.navigate(['sellers/list']);
   }
 
 }

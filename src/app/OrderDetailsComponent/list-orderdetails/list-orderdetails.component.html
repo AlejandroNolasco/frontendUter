@@ -18,7 +18,7 @@
         <ng-container *ngFor="let orderdetail of orderdetails">
             <tr>
                 <th scope="row">{{ orderdetail.id }}</th>
-                <td>{{orderdetail.orders.orderDate}}</td>
+                <td>{{orderdetail.orders.id}}</td>
                 <td>{{orderdetail.products.name}}</td>
                 <td>{{orderdetail.unitPrice}}</td>
                 <td>{{orderdetail.quantity}}</td>

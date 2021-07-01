@@ -30,7 +30,7 @@ export class UpdateProductsComponent implements OnInit {
     this.productService.updateProducts(this.id, this.product)
     .subscribe(datos =>{
       console.log(datos)
-      this.router.navigate(['listar']);
+      this.router.navigate(['products/list']);
     }, error=>console.log(error));
     this.product = new Products();
   }

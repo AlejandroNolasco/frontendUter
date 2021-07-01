@@ -23,7 +23,7 @@ export class CreateProductComponent implements OnInit {
     this.productService.insertProducts(this.product)
       .subscribe(datos=>console.log(datos), error=>console.log(error));
       this.product = new Products();
-      this.router.navigate(['listproduct']);
+      this.router.navigate(['products/list']);
   }
 
 }

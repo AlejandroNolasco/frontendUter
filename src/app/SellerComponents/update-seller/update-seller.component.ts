@@ -29,7 +29,7 @@ export class UpdateSellerComponent implements OnInit {
     this.sellerService.updateSeller(this.id, this.seller)
     .subscribe(datos =>{
       console.log(datos)
-      this.router.navigate(['listar']);
+      this.router.navigate(['sellers/list']);
     }, error=>console.log(error));
     this.seller = new Seller();
   }

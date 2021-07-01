@@ -25,7 +25,7 @@ export class CreateOrderDetailsComponent implements OnInit {
     this.orderdetailService.insertOrderDetails(this.orderdetail)
       .subscribe(datos=>console.log(datos), error=>console.log(error));
       this.orderdetail = new OrderDetails();
-      this.router.navigate(['listorderdetail']);
+      this.router.navigate(['orderdetails/list']);
   }
 
 }

@@ -30,7 +30,7 @@ export class ListSellerComponent implements OnInit {
   }
 
   updateSeller(seller: Seller){
-    this.router.navigate(['updateseller', seller.id]);
+    this.router.navigate(['sellers/update', seller.id]);
   }
   searchSellerByUsername(){
     if(this.username.length!=0){

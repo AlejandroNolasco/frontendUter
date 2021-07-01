@@ -26,7 +26,7 @@ export class CreateOrdersComponent implements OnInit {
     this.orderService.insertOrder(this.order)
       .subscribe(datos=>console.log(datos), error=>console.log(error));
       this.order = new Orders();
-      this.router.navigate(['listorder']);
+      this.router.navigate(['orders/list']);
   }
 
   /*listRol() {

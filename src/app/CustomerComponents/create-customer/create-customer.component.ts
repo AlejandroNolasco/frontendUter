@@ -15,7 +15,6 @@ export class CreateCustomerComponent implements OnInit {
   constructor( private route: ActivatedRoute,
     private router : Router,
     private customerService: CustomerService) { }
-    //private rolService: RolService) { }
     
 
   ngOnInit(): void {
@@ -25,16 +24,7 @@ export class CreateCustomerComponent implements OnInit {
     this.customerService.insertCustomer(this.customer)
       .subscribe(datos=>console.log(datos), error=>console.log(error));
       this.customer = new Customer();
-      this.router.navigate(['listcustomer']);
+      this.router.navigate(['customers/list']);
   }
-
-  /*listRol() {
-    this.rolService.getRolList().subscribe(
-      data => {
-        console.log('Rol' + JSON.stringify(data));
-        this.rolList = data;
-      }
-    )
-  }*/
 
 }

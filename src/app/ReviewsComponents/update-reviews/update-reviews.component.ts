@@ -30,7 +30,7 @@ export class UpdateReviewsComponent implements OnInit {
     this.reviewService.updateReviews(this.id, this.review)
     .subscribe(datos =>{
       console.log(datos)
-      this.router.navigate(['listar']);
+      this.router.navigate(['reviews/list']);
     }, error=>console.log(error));
     this.review = new Reviews();
   }
