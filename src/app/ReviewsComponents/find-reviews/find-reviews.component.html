@@ -7,7 +7,8 @@
             <label class="form-control-plaintext" for="stars">Stars :</label>
         </div>
         <div class="col-auto">
-            <input type="text" class="form-control"  required [(ngModel)]="stars" placeholder="Search by stars" />
+            <input type="text" class="form-control" id="stars" 
+            name="stars"  required [(ngModel)]="stars" placeholder="Search by stars" />
         </div>
         <div class="col-auto">
             <button type="submit" class="btn btn-success">Search</button>

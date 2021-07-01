@@ -1,14 +1,14 @@
 <br/>
-<h2>Search Customer</h2>
+<h2>Search Seller</h2>
 <br/>
 <div>
-    <form class="row g-3" ngNativeValidate (ngSubmit)="searchCustomerByName()">
+    <form class="row g-3" ngNativeValidate (ngSubmit)="searchSellerByName()">
         <div class="col-auto">
             <label class="form-control-plaintext" for="name">Name :</label>
         </div>
         <div class="col-auto">
-            <input type="text" class="form-control" id="name" 
-            name="name" required [(ngModel)]="name" placeholder="Search by name" />
+            <input type="text" class="form-control" id="name" required [(ngModel)]="name" 
+            name="name" placeholder="Search by name" />
         </div>
         <div class="col-auto">
             <button type="submit" class="btn btn-success">Search</button>
@@ -30,23 +30,20 @@
             <th scope="col">Password</th>
             <th scope="col">Phone</th>
             <th scope="col">Email</th>
-            <th scope="col">Rol</th>
         </tr>
     </thead>
     <tbody>
-        <ng-container *ngFor="let customer of customers">
+        <ng-container *ngFor="let seller of sellers">
             <tr>
-                <th scope="row">{{ customer.id }}</th>
-                <td>{{customer.name}}</td>
-                <td>{{customer.username}}</td>
-                <td>{{customer.password}}</td>
-                <td>{{customer.gender}}</td>
-                <td>{{customer.phone}}</td>
-                <td>{{customer.email}}</td>
-                <td>{{customer.rol.name}}</td>
+                <th scope="row">{{ seller.id }}</th>
+                <td>{{seller.name}}</td>
+                <td>{{seller.username}}</td>
+                <td>{{seller.password}}</td>
+                <td>{{seller.gender}}</td>
+                <td>{{seller.phone}}</td>
+                <td>{{seller.email}}</td>
+
             </tr>
         </ng-container>
     </tbody>
 </table>
-
-

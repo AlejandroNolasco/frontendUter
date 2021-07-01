@@ -31,8 +31,10 @@ import { ListRolComponent } from './RolesComponents/list-rol/list-rol.component'
 import { UpdateRolComponent } from './RolesComponents/update-rol/update-rol.component';
 import { FindCategoryComponent } from './CategoryComponents/find-category/find-category.component';
 import { FindRolComponent } from './RolesComponents/find-rol/find-rol.component';
+import { FindSellerComponent } from './SellerComponents/find-seller/find-seller.component';
+import { ListSellerComponent } from './SellerComponents/list-seller/list-seller.component';
+import { UpdateSellerComponent } from './SellerComponents/update-seller/update-seller.component';
 import { HomeComponent } from './Home/home/home.component';
-
 const routes: Routes = [
   {path: '', redirectTo:'customer', pathMatch:'full'},
 
@@ -74,6 +76,9 @@ const routes: Routes = [
   {path: 'profile', component: ProfileComponent},
   
   {path: 'sellers/create', component: CreateSellerComponent},
+  {path: 'sellers/search', component:FindSellerComponent},
+  {path: 'sellers/list', component:ListSellerComponent},
+  {path: 'sellers/update/:id', component:UpdateSellerComponent},
 
   {path: '', component: HomeComponent}
 ];

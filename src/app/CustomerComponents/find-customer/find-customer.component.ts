@@ -22,9 +22,6 @@ export class FindCustomerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
-
-
   searchCustomerByName(){
     this.customerService.getCustomerByName(this.name)
     .subscribe(customers =>this.customers=customers);

@@ -30,7 +30,7 @@ export class OrderDetailsService {
     return this.http.delete(`${this.baseURL}/${id}`);
   }
   getOrderDetailsByDiscount(discount: number) : Observable<any>{
-    return this.http.get(`${this.baseURL}/${discount}`);
+    return this.http.get(`${this.baseURL}/searchByDiscount/${discount}`);
   }
   getOrderDetailsById(id: number) : Observable<any>{
     return this.http.get(`${this.baseURL}/${id}`);
