@@ -36,6 +36,7 @@ import { ListRolComponent } from './RolesComponents/list-rol/list-rol.component'
 import { UpdateRolComponent } from './RolesComponents/update-rol/update-rol.component';
 import { FindCategoryComponent } from './CategoryComponents/find-category/find-category.component';
 import { FindRolComponent } from './RolesComponents/find-rol/find-rol.component';
+import { HomeComponent } from './Home/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,6 +77,7 @@ import { FindRolComponent } from './RolesComponents/find-rol/find-rol.component'
 
     CreateSellerComponent,
     ProfileComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
