@@ -43,9 +43,4 @@ export class CustomerService {
   getCustomerByEmail(email: string): Observable<any> {
     return this.http.get(`${this.baseURL}/searchByEmail/${email}`);
   }
-
-  /*getRolList(): Observable<any> {
-    return this.http.get(`${}`)
-  }*/
-  
 }

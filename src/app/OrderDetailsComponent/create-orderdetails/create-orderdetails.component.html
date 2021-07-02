@@ -1,0 +1,53 @@
+<br/>
+<h2>Registro de OrderDetails</h2>
+<br/>
+<div>
+    <form ngNativeValidate (ngSubmit)="insertOrderDetails()">
+        <div>
+            <input type="hidden" id="OrderDetailsId" name="OrderDetailsId"
+            required [(ngModel)]="orderdetail.id">
+        </div>
+        
+        <div class="form-group col-md-6">
+            <label for="unitPrice">Unit Price :</label>
+            <input type="number" class="form-control" id="unitPrice"
+            name= "unitPrice" placeholder="Unit Price"
+            required [(ngModel)]="orderdetail.unitPrice" />
+        </div>
+
+        <div class="form-group col-md-6">
+            <label for="quantity">Quantity :</label>
+            <input type="number" class="form-control" id="quantity"
+            name= "quantity" placeholder="Quantity"
+            required [(ngModel)]="orderdetail.quantity" />
+        </div>
+        <div class="form-group col-md-6">
+            <label for="id">Order :</label>
+            <input type="number" class="form-control" id="id"
+            name= "id" placeholder="id"
+            required [(ngModel)]="orderdetail.orders.id" />
+        </div>
+        <div class="form-group col-md-6">
+            <label for="id">Product :</label>
+            <select class="form-select" name="id" [(ngModel)]="orderdetail.products.id" required>
+                <option selected value="1">Teclado Gamer</option>
+                <option value="Monitor">Monitor</option>
+                <option value="2">Mouse Gamer</option>
+                <option value="Parlantes">Parlantes</option>
+                <option value="Audifonos">Audifonos</option>
+
+            </select>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="discount">Discount :</label>
+            <select class="form-select" name="discount" [(ngModel)]="orderdetail.discount" required>
+                <option selected value="20">20%</option>
+                <option value="50">50%</option>
+                <option value="80">80%</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+
+    </form>
+</div>

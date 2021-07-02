@@ -1,0 +1,46 @@
+<br/>
+<h2>Search Reviews</h2>
+<br/>
+<div>
+    <form class="row g-3" ngNativeValidate (ngSubmit)="searchReviewsByStars()">
+        <div class="col-auto">
+            <label class="form-control-plaintext" for="stars">Stars :</label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" id="stars" 
+            name="stars"  required [(ngModel)]="stars" placeholder="Search by stars" />
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-success">Search</button>
+        </div>
+    </form>
+</div>
+<br/>
+<br/>
+
+<br/>
+
+<table class="table table-striped table-dark table-hover">
+    <thead class="thead_dark">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Stars</th>
+            <th scope="col">Description</th>
+            <th scope="col">Seller</th>
+            <th scope="col">Customer</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let review of reviews">
+            <tr>
+                <th scope="row">{{ review.id }}</th>
+                <td>{{review.stars}}</td>
+                <td>{{review.description}}</td>
+                <td>{{review.customer.username}}</td>
+                <td>{{review.seller.username}}</td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>
+
+
